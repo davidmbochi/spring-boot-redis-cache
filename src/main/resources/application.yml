@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: spring-boot-cache
+  data:
+    jpa:
+      repositories:
+        bootstrap-mode: deferred
+  datasource:
+    url: jdbc:postgresql://localhost:5432/javawhizz
+    username: javawhizz
+    password: javawhizz
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
